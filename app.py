@@ -1,11 +1,11 @@
 from flask import Flask
 import os
 
-app = Flask(__name__)
+
 
 @app.route('/')
 def hello():
-    return "Hello World!"
+    return "Hello Redhat Openshift!"
 
 if __name__ == '__main__':
     port = os.environ.get('FLASK_PORT') or 8080
